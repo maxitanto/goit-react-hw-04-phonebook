@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Component } from 'react';
+import { Component, useState } from 'react';
 import css from './ContactForm.module.css';
 
 export class ContactForm extends Component {
