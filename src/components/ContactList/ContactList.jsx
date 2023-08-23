@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from './ContactList.module.css';
 import { ContactListItem } from 'components/ContactListItem/ContactListItem';
 
-export const ContactList = ({ contacts, handleDelete }) => {
+export function ContactList({ contacts, handleDelete }) {
   if (contacts.length) {
     return (
       <ul className={css.contactList}>
@@ -22,7 +22,7 @@ export const ContactList = ({ contacts, handleDelete }) => {
   } else {
     return <h2 className={css.title}>Not found</h2>;
   }
-};
+}
 
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(

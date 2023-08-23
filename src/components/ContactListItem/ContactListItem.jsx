@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from '../ContactList/ContactList.module.css';
 
-export const ContactListItem = ({ name, number, handleDelete, id }) => {
+export function ContactListItem({ name, number, handleDelete, id }) {
   return (
     <>
       {name}: {number}
@@ -14,7 +14,7 @@ export const ContactListItem = ({ name, number, handleDelete, id }) => {
       </button>
     </>
   );
-};
+}
 
 ContactListItem.propTypes = {
   name: PropTypes.string.isRequired,
